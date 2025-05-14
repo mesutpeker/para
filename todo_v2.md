@@ -1,0 +1,12 @@
+- [x] Yeni kullanıcı gereksinimlerini ve yüklenen görselleri analiz et (Görsel tabanlı sorular, test formatı, iPhone Safari uyumluluğu).
+- [x] Para görsellerini kullanıcı tarafından sağlanan d- [x] Toplama ve çıkarma için görsel soru kullanıcı arayüzünü tasarla (Görsel para gösterimi, çoktan seçmeli cevaplar).- [x] Duyarlı HTML, CSS ve JavaScript ile görsel matematik testini uygula:
+    - [x] Rastgele görsel soru üretme (2-3 para görseli ile toplama/çıkarma).
+    - [x] Çoktan seçmeli cevap seçenekleri oluşturma (biri doğru, diğerleri yakın yanlışlar).
+    - [x] Kullanıcının cevabını kontrol etme.
+    - [x] Anında geri bildirim verme (doğru/yanlış, doğru cevabı gösterme).
+    - [x] Skor veya ilerleme takibi.
+    - [x] iPhone Safari için tam görünüm ve kolay kullanım optimizasyonu.
+- [x] Uygulamayı özellikle iPhone Safari üzerinde test et ve kullanılabilirliği optimize et.
+- [x] Gerekli düzeltmeleri ve iyileştirmeleri yap.
+- [ ] Son uygulama dosyalarını (HTML, CSS, JS, yeni görseller) bir ZIP arşivinde paketle.
+- [ ] Kullanıcıya güncellenmiş ZIP dosyasını ve tamamlandığına dair bir mesaj gönder.

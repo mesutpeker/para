@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Türk Lirası Alıştırmaları (Görsel)</title>
+    <link rel="stylesheet" href="style_v2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Para Hesaplama Oyunu</h1>
+        </header>
+        
+        <main>
+            <div class="question-area">
+                <p id="question-prompt">Bu paraların toplamı ne kadar?</p>
+                <div id="image-display-area">
+                    <!-- Para görselleri buraya gelecek -->
+                </div>
+            </div>
+
+            <div id="options-area">
+                <!-- Çoktan seçmeli cevaplar buraya gelecek -->
+            </div>
+
+            <div class="feedback-area">
+                <p id="feedback-text"></p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="score-board">
+                <p>Doğru: <span id="score">0</span></p>
+                <p>Yanlış: <span id="mistakes">0</span></p>
+            </div>
+            <button id="next-question-button">Sonraki Soru</button>
+        </footer>
+    </div>
+
+    <script src="script_v2.js"></script>
+</body>
+</html>

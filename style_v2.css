@@ -1,0 +1,203 @@
+/* style_v2.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #eef5ff; /* Light blue background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%; /* Prevent text scaling in Safari */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px; /* Optimized for mobile view */
+    margin-top: 20px;
+}
+
+header h1 {
+    color: #007aff; /* Apple Blue */
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+.question-area {
+    margin-bottom: 20px;
+}
+
+#question-prompt {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#image-display-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Spacing between images and operator */
+    min-height: 80px; /* Ensure space even if images load slow */
+    padding: 10px;
+    border: 2px dashed #007aff;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+#image-display-area img {
+    max-width: 100px; /* Max width for banknotes */
+    max-height: 50px; /* Max height for banknotes */
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#image-display-area .coin {
+    max-width: 50px; /* Smaller size for coins */
+    max-height: 50px;
+}
+
+#image-display-area .operator {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff9500; /* Apple Orange */
+    margin: 0 10px;
+}
+
+.options-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.options-area button {
+    background-color: #007aff;
+    color: white;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.options-area button:hover {
+    background-color: #005ecb;
+}
+
+.options-area button:active {
+    transform: translateY(1px);
+    background-color: #004a9e;
+}
+
+.options-area button.correct {
+    background-color: #34c759; /* Apple Green */
+}
+
+.options-area button.incorrect {
+    background-color: #ff3b30; /* Apple Red */
+}
+
+.options-area button.disabled {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.feedback-area {
+    margin-bottom: 20px;
+    min-height: 2em; /* Reserve space for feedback text */
+}
+
+#feedback-text {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#feedback-text.correct {
+    color: #34c759;
+}
+
+#feedback-text.incorrect {
+    color: #ff3b30;
+}
+
+footer {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.score-board p span {
+    font-weight: bold;
+}
+
+#score {
+    color: #34c759;
+}
+
+#mistakes {
+    color: #ff3b30;
+}
+
+#next-question-button {
+    background-color: #ff9500; /* Apple Orange */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+#next-question-button:hover {
+    background-color: #e08500;
+}
+
+/* iPhone specific considerations (though covered by general responsiveness) */
+@media (max-width: 375px) { /* iPhone SE, 6, 7, 8, X, XS, 11 Pro, 12 mini, 13 mini */
+    header h1 {
+        font-size: 1.6em;
+    }
+    #question-prompt {
+        font-size: 1.1em;
+    }
+    .options-area button {
+        font-size: 1em;
+        padding: 12px 8px;
+    }
+    #image-display-area img {
+        max-width: 80px;
+        max-height: 40px;
+    }
+    #image-display-area .coin {
+        max-width: 40px;
+        max-height: 40px;
+    }
+}
+

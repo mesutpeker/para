@@ -1,0 +1,16 @@
+- [x] Kullanıcı gereksinimlerini tam olarak analiz et (Hedef kitle: İlkokul 2. sınıf, Konu: Türk Lirası toplama/çıkarma, Etkileşimli, Eğitici, Eğlenceli, Teslimat: ZIP).
+- [x] Türk Lirası banknot ve madeni para görselleri bul ve kaydet.
+- [x] Uygulamanın temel kullanıcı arayüzünü tasarla (Soru alanı, cevap seçenekleri, geri bildirim alanı, ilerleme/skor göstergesi).
+- [x] Toplama ve çıkarma işlemleri için sayı aralıklarını ve soru türlerini belirle.
+- [x] HTML iskeletini oluştur (`index.html`).
+- [x] CSS ile temel stilleri uygula (`style.css`).
+- [x] JavaScript ile etkileşim mantığını geliştir (`script.js`):
+    - [x] Rastgele soru üretme (toplama/çıkarma, lira/kuruş).
+    - [x] Cevap seçeneklerini gösterme.
+    - [x] Kullanıcının cevabını kontrol etme.
+    - [x] Anında geri bildirim verme (doğru/yanlış).
+    - [x] Skor veya ilerleme takibi.
+- [x] Uygulamayı farklı senaryolarla test et (hatalar, kullanılabilirlik).
+- [x] Gerekli düzeltmeleri ve iyileştirmeleri yap.
+- [x] Uygulama dosyalarını (HTML, CSS, JS, görseller) bir ZIP arşivinde paketle.
+- [x] Kullanıcıya ZIP dosyasını ve tamamlandığına dair bir mesaj gönder.
