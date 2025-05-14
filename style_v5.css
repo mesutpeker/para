@@ -11,6 +11,7 @@ body {
     padding: 10px;
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%; /* Prevent text scaling in Safari */
+    text-size-adjust: 100%; /* For other browsers */
 }
 
 .container {
@@ -59,16 +60,16 @@ main {
 
 /* --- MODIFICATION: Increase money image size --- */
 #image-display-area img {
-    max-width: 160px; /* Increased from 140px */
-    max-height: 80px; /* Increased from 70px */
+    max-width: 200px; /* Increased from 160px */
+    max-height: 100px; /* Increased from 80px */
     object-fit: contain;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.08);
 }
 
 #image-display-area .coin {
-    max-width: 80px; /* Increased from 70px */
-    max-height: 80px; /* Increased from 70px */
+    max-width: 100px; /* Increased from 80px */
+    max-height: 100px; /* Increased from 80px */
 }
 /* --- END MODIFICATION --- */
 
@@ -194,6 +195,19 @@ footer {
     background-color: #e08500;
 }
 
+/* iPhone Safari için özel ayarlar */
+@supports (-webkit-touch-callout: none) {
+    #image-display-area img {
+        max-width: 220px; /* iPhone için daha büyük */
+        max-height: 110px;
+    }
+    
+    #image-display-area .coin {
+        max-width: 110px; /* iPhone için daha büyük */
+        max-height: 110px;
+    }
+}
+
 @media (max-width: 375px) { 
     header h1 {
         font-size: 1.5em;
@@ -207,17 +221,30 @@ footer {
         padding: 12px 8px; /* Adjusted from 18px 10px */
     }
     #image-display-area img {
-        max-width: 130px; /* Increased from 110px */
-        max-height: 65px; /* Increased from 55px */
+        max-width: 170px; /* Increased from 130px */
+        max-height: 85px; /* Increased from 65px */
     }
     #image-display-area .coin {
-        max-width: 65px; /* Increased from 55px */
-        max-height: 65px; /* Increased from 55px */
+        max-width: 85px; /* Increased from 65px */
+        max-height: 85px; /* Increased from 65px */
     }
     /* --- END MODIFICATION --- */
     #next-question-button {
         padding: 12px 20px;
         font-size: 1.1em;
+    }
+    
+    /* iPhone Safari için küçük ekranda özel ayarlar */
+    @supports (-webkit-touch-callout: none) {
+        #image-display-area img {
+            max-width: 180px;
+            max-height: 90px;
+        }
+        
+        #image-display-area .coin {
+            max-width: 90px;
+            max-height: 90px;
+        }
     }
 }
 

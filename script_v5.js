@@ -8,6 +8,32 @@ document.addEventListener("DOMContentLoaded", () => {
     const mistakesElement = document.getElementById("mistakes");
     const nextQuestionButton = document.getElementById("next-question-button");
 
+    // Ses elementleri
+    const correctSound = document.getElementById("correct-sound");
+    const incorrectSound = document.getElementById("incorrect-sound");
+    const backgroundMusic = document.getElementById("background-music");
+    
+    // Arkaplan müziği ayarları
+    backgroundMusic.volume = 0.3;
+    
+    // Basit müzik kontrol sistemi - yalnızca ilk tıklamada başlat
+    let musicStarted = false;
+    
+    const startMusicOnce = () => {
+        if (!musicStarted) {
+            backgroundMusic.play()
+                .then(() => {
+                    musicStarted = true;
+                    // İşlevini tamamladığında tüm dinleyicileri kaldır
+                    document.removeEventListener('click', startMusicOnce);
+                })
+                .catch(e => console.log("Müzik başlatılamadı:", e));
+        }
+    };
+    
+    // Sadece bir global click event listener ekle
+    document.addEventListener('click', startMusicOnce);
+
     let score = 0;
     let mistakes = 0;
     let correctAnswerTotalKurus = 0;
@@ -210,6 +236,9 @@ document.addEventListener("DOMContentLoaded", () => {
             buttonElement.classList.add("correct");
             score++;
             scoreElement.textContent = score;
+            // Doğru sesi çal
+            correctSound.currentTime = 0;
+            correctSound.play().catch(e => console.log("Doğru sesi çalınamadı:", e));
         } else {
             feedbackTextElement.textContent = `Maalesef yanlış. Doğru cevap: ${formatKurusToString(correctAnswerTotalKurus)}`;
             feedbackTextElement.className = "incorrect";
@@ -217,6 +246,9 @@ document.addEventListener("DOMContentLoaded", () => {
             // The correct button is already highlighted above
             mistakes++;
             mistakesElement.textContent = mistakes;
+            // Yanlış sesi çal
+            incorrectSound.currentTime = 0;
+            incorrectSound.play().catch(e => console.log("Yanlış sesi çalınamadı:", e));
         }
         nextQuestionButton.disabled = false;
     }
