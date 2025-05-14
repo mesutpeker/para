@@ -3,5 +3,4 @@
 - [x] Görsel soru kullanıcı arayüzünü daha büyük elemanlar ve basit matematik işlemleri için genel olarak- [x] Seçenekleri mobil cihazlarda maksimum boyut ve görsel dikkat çekicilik için yeniden tasarla (CSS güncellemeleri).
 - [x] Genel yerleşimi kompakt, mobil öncelikli bir görünüm için yeniden düzenle (CSS güncellemeleri)- [x] Kolay ve pratik soru mantığının (JavaScript) mevcut olduğundan ve basitleştirilmiş olduğundan emin ol.
 - [x] HTML, CSS (`style_v4.css`) ve JavaScript (`script_v4.js`) dosyalarını güncellenmiş, büyük, dokunmatik dostu ve kompakt kullanıc- [x] Uygulamayı özellikle iPhone Safari üzerinde kapsamlı bir şekilde test et ve küçük çocuklar için optimize et (Görsel netlik, kolay kullanım, kompaktlık).
-- [x] Gerekli son düzeltmeleri ve iyileştirmeleri yap.a dosyalarını bir ZIP arşivinde paketle (`turkish_lira_app_v4.zip`).
-- [ ] Kullanıcıya güncellenmiş ZIP dosyasını ve tamamlandığına dair bir mesaj gönder.
+- [x] Gerekli son düzeltmeleri ve iyileştirm- [x] Son uygulama dosyalarını bir ZIP arşivinde paketle (`turkish_lira_app_v4.zip`).- [x] Kullanıcıya güncellenmiş ZIP dosyasını ve tamamlandığına dair bir mesaj gönder.

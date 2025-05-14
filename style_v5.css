@@ -1,0 +1,223 @@
+/* style_v5.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f4f8; /* Softer blue background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%; /* Prevent text scaling in Safari */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 20px; /* Softer radius */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 480px; /* Slightly adjusted for compact view */
+    margin-top: 15px;
+}
+
+header h1 {
+    color: #007aff; /* Apple Blue */
+    font-size: 1.7em; /* Adjusted for compact view */
+    margin-bottom: 15px;
+}
+
+main {
+    margin-bottom: 15px;
+}
+
+.question-area {
+    margin-bottom: 15px;
+}
+
+#question-prompt {
+    font-size: 1.25em; /* Adjusted */
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#image-display-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; 
+    min-height: 100px; /* Increased to accommodate larger images */
+    padding: 10px;
+    border: 2px dashed #007aff;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+/* --- MODIFICATION: Increase money image size --- */
+#image-display-area img {
+    max-width: 160px; /* Increased from 140px */
+    max-height: 80px; /* Increased from 70px */
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+#image-display-area .coin {
+    max-width: 80px; /* Increased from 70px */
+    max-height: 80px; /* Increased from 70px */
+}
+/* --- END MODIFICATION --- */
+
+#image-display-area .operator {
+    font-size: 2.2em; 
+    font-weight: bold;
+    color: #ff9500; 
+    margin: 0 8px;
+}
+
+#options-area {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for max width on mobile */
+    gap: 10px; /* Slightly reduced gap for smaller buttons */
+    margin-bottom: 15px;
+    padding: 0 10px; 
+}
+
+/* --- MODIFICATION: Decrease option button size --- */
+#options-area button {
+    background-color: #007aff; 
+    color: white;
+    padding: 15px 10px; /* Decreased from 20px 15px */
+    border: none;
+    border-radius: 10px; /* Slightly smaller radius */
+    cursor: pointer;
+    font-size: 1.3em; /* Decreased from 1.5em */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.15); 
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15); /* Slightly reduced shadow */
+    width: 100%; 
+    box-sizing: border-box;
+}
+/* --- END MODIFICATION --- */
+
+#options-area button:hover {
+    background-color: #005ecb;
+}
+
+#options-area button:active {
+    transform: translateY(1px); /* Adjusted press effect */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    background-color: #004a9e;
+}
+
+#options-area button.correct {
+    background-color: #34c759; 
+    box-shadow: 0 3px 6px rgba(40,150,60,0.25); 
+}
+
+#options-area button.incorrect {
+    background-color: #ff3b30; 
+    box-shadow: 0 3px 6px rgba(200,50,40,0.25);
+}
+
+#options-area button.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.feedback-area {
+    margin-bottom: 15px;
+    min-height: 2em; 
+}
+
+#feedback-text {
+    font-size: 1.25em; 
+    font-weight: bold;
+}
+
+#feedback-text.correct {
+    color: #34c759;
+}
+
+#feedback-text.incorrect {
+    color: #ff3b30;
+}
+
+footer {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.15em; 
+    margin-bottom: 10px;
+}
+
+.score-board p span {
+    font-weight: bold;
+}
+
+#score {
+    color: #34c759;
+}
+
+#mistakes {
+    color: #ff3b30;
+}
+
+#next-question-button {
+    background-color: #ff9500; 
+    color: white;
+    padding: 15px 25px; 
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.15em; 
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    transition: background-color 0.2s ease;
+    width: 100%;
+    max-width: 280px; 
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+#next-question-button:hover {
+    background-color: #e08500;
+}
+
+@media (max-width: 375px) { 
+    header h1 {
+        font-size: 1.5em;
+    }
+    #question-prompt {
+        font-size: 1.1em;
+    }
+    /* --- MODIFICATION: Adjust sizes for small screens --- */
+    #options-area button {
+        font-size: 1.2em; /* Adjusted from 1.3em */
+        padding: 12px 8px; /* Adjusted from 18px 10px */
+    }
+    #image-display-area img {
+        max-width: 130px; /* Increased from 110px */
+        max-height: 65px; /* Increased from 55px */
+    }
+    #image-display-area .coin {
+        max-width: 65px; /* Increased from 55px */
+        max-height: 65px; /* Increased from 55px */
+    }
+    /* --- END MODIFICATION --- */
+    #next-question-button {
+        padding: 12px 20px;
+        font-size: 1.1em;
+    }
+}
+

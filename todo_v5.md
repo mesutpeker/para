@@ -1,0 +1,3 @@
+- [x] En son kullanıcı geri bildirimini analiz et (Para görselleri biraz daha büyük, seçenekler biraz daha küçük, başka değişiklik yok- [x] Para görsellerinin boyutunu CSS (`style_v5.css`) içinde artır.
+- [x] Seçenek düğmelerinin boyutunu CSS (`style_v5.css`- [x] HTML (`index.html`), CSS (`style_v5.css`) ve JavaScript (`script_v5.js`) dosyalarını sadece bu değişiklikler için güncelle (JavaScript mantığı değişmeyecek, `script_v4.js` kopyalanarak `script_v5.js` oluşturulabilir). - [x] Uygulamanın görsel doğruluğunu test et.
+- [ ] Kullanıcıya güncellenmiş ZIP dosyasını ve tamamlandığına dair bir mesaj gönder.
