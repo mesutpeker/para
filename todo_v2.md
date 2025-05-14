@@ -7,6 +7,4 @@
     - [x] Skor veya ilerleme takibi.
     - [x] iPhone Safari için tam görünüm ve kolay kullanım optimizasyonu.
 - [x] Uygulamayı özellikle iPhone Safari üzerinde test et ve kullanılabilirliği optimize et.
-- [x] Gerekli düzeltmeleri ve iyileştirmeleri yap.
-- [ ] Son uygulama dosyalarını (HTML, CSS, JS, yeni görseller) bir ZIP arşivinde paketle.
-- [ ] Kullanıcıya güncellenmiş ZIP dosyasını ve tamamlandığına dair bir mesaj gönder.
+- [x] Gerekli düzeltmeleri ve iyileştirmeleri yap- [x] Son uygulama dosyalarını (HTML, CSS, JS, yeni görseller) bir ZIP arşivinde paketle.- [x] Kullanıcıya güncellenmiş ZIP dosyasını ve tamamlandığına dair bir mesaj gönder.

@@ -1,0 +1,10 @@
+- [x] En son kullanıcı geri bildirimini analiz et (Daha büyük görseller/seçenekler, basit küsuratsız sorular, günlük hayat senaryoları).
+- [x] Para görsellerinin CSS ile daha büyük gösterilmesini sağla.
+- [x] Kullanıcı arayüzünü daha büyük ve dokunmatik dostu elemanlar için yeniden tasarla (CSS güncellemeleri).
+- [x] Kolay ve pratik soru mantığını uygula (JavaScript güncellemeleri):
+    - [x] Basit toplama ve çıkarma işlemleri (az küsuratlı veya küsuratsız).
+    - [x] Günlük alışveriş senaryolarına uygun para miktarları.
+    - [x] Para tanımayı kolaylaştıracak sorular.
+- [x] HTML, CSS ve JavaScript dosyalarını büyük, dokunmatik dostu kullanıcı arayüzü için güncel- [x] Uygulamayı özellikle iPhone Safari üzerinde test et ve küçük çocuklar için optimize et (Görsel netlik, kolay kullanım).
+- [x] Gerekli düzeltmeleri ve iyileştirmeleri yap.ma dosyalarını (HTML, CSS, JS, görseller) bir ZIP arşivinde paketle (`turkish_lira_app_v3.zip`).
+- [ ] Kullanıcıya güncellenmiş ZIP dosyasını ve tamamlandığına dair bir mesaj gönder.
